@@ -3,7 +3,6 @@ Each folder will have a problem.txt file describing the question and one or more
 
 ## Sources
 - Project Euler https://projecteuler.net/
--- projectEuler
 - Code Fights https://codefights.com/interview-practice
 
 ### JS files 

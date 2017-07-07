@@ -1,5 +1,5 @@
 # Practice Problems
-Each folder will have a problem.txt file describing the question and one or more solutions. 
+Each folder will have a file describing the question and one or more solutions. 
 
 ## Sources
 - Project Euler https://projecteuler.net/

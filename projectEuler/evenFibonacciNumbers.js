@@ -6,15 +6,15 @@
 
 'use strict'
 // std out time to run the solution
-console.time('first solution');
-solutionFirst();
-console.timeEnd('first solution');
+console.time('solution');
+solution();
+console.timeEnd('solution');
 
 console.time('optimal solution');
 solutionOptimal ();
 console.timeEnd('optimal solution');
 // version 1 solution
-function solutionFirst(){
+function solution(){
   var sum = 0;
   var a = 1;
   var b = 2;

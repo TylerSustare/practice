@@ -5,12 +5,12 @@
 'use strict'
 
 // std out time to run the solution
-console.time('first solution');
-solutionFirst(998001);
-console.timeEnd('first solution');
+console.time('solution');
+solution(998001);
+console.timeEnd('solution');
 
 // version 1 solution
-function solutionFirst(n){
+function solution(n){
   var result = {pal:0, num1:0, num2:0};
   for(var i = n; i > 0; i--){
     if(isPalindrome(i)){
@@ -42,15 +42,4 @@ function isPalindrome(intInput){
   return true;
 }
 
-/*
-console.time('optimal solution');
-solutionOptimal ();
-console.timeEnd('optimal solution');
-
-// optimal solutoin
-function solutionOptimal(){
-}
-*/
-
-
-console.log('answer: ' +  JSON.stringify(solutionFirst(998001)));
+console.log('answer: ' +  JSON.stringify(solution(998001)));

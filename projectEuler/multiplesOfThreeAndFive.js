@@ -5,10 +5,10 @@
 'use strict'
 
 // std out time to run the solution
-console.time('first solution');
-solutionOne();
-console.timeEnd('first solution');
-function solutionOne(){
+console.time('solution');
+solution();
+console.timeEnd('solution');
+function solution(){
   var limit = 999;
   var sum = 0;
   for(var i = 0; i < limit; i++){

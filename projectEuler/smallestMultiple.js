@@ -9,9 +9,9 @@ console.time('solution');
 solution(20);
 console.timeEnd('solution');
 
-// version 1 solution -> more of a brute force approach testing every number
+// version 1 solution -> a brute force approach testing every number
 function solution(n){
-  var isDiv = 0;
+  var isDiv = 0; // count for n/2 to n for *divisible by* 
   var result = 1; // start at one to make first condition false. 
   while(isDiv < n/2){
     for(var i = n; i > n/2; i--){
@@ -28,6 +28,6 @@ function solution(n){
 
 }
 
-//console.log('answer 1: ' +  JSON.stringify(solution(20)));
+console.log('answer 1: ' +  JSON.stringify(solution(20)));
 
 // per projecteuler.net optimal solution calls for an array of primes

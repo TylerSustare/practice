@@ -13,9 +13,26 @@ class Node{
 module.exports =  class LinkedList {
         constructor(){
             this.head = null;
+            /* fill it with stuff
             for(let i = 0; i < 5; i++){
                 this.add(i);
             }
+            */
+        }
+        
+        nodeAtIndex(index){
+            if(index == 0){
+                return this.head;
+            }
+            let i = 0;
+            let current = this.head;
+            
+            while(i < index){
+                current = current.nextNode;
+                i += 1;
+            }
+            // what if it's not in there?
+            return current;
         }
         
         // O(1)

@@ -7,6 +7,29 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+/* my first solution O(n/2) */
+function palindrome(str) {
+    for (let i = 0; i < Math.floor(str.length); i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
 module.exports = palindrome;
+
+/* first solution from tutorial probably O(n)
+function palindrome(str) {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+*/
+
+/* second solution O(n) 
+ * does twice the amount of work needed, given for example of something that works, but isn't the optimal solution. 
+function palindrome(str) {
+    return str.split('').every((char, i) => char === str[str.length - 1 - i]);
+}
+*/

@@ -8,6 +8,8 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+module.exports = anagrams;
+
 // my first
 /*
 function anagrams(stringA, stringB) {
@@ -33,8 +35,6 @@ function anagrams(stringA, stringB) {
     return true;
 }
 */
-
-module.exports = anagrams;
 
 // their solution
 // function anagrams(stringA, stringB) {

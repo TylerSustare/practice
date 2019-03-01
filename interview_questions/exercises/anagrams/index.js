@@ -37,26 +37,35 @@ function anagrams(stringA, stringB) {
 module.exports = anagrams;
 
 // their solution
+// function anagrams(stringA, stringB) {
+//     const mapA = buildCharMap(stringA);
+//     const mapB = buildCharMap(stringB);
+
+//     if (Object.keys(mapA).length !== Object.keys(mapB).length) {
+//         return false;
+//     }
+
+//     for (let key in mapA) {
+//         if (mapA[key] !== mapB[key]) {
+//             return false
+//         }
+//     }
+//     return true;
+// }
+
+// function buildCharMap(str) {
+//     const charMap = {};
+//     for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
+//         charMap[char] = charMap[char] + 1 || 1;
+//     }
+//     return charMap;
+// }
+
+// their second and my favorite
 function anagrams(stringA, stringB) {
-    const mapA = buildCharMap(stringA);
-    const mapB = buildCharMap(stringB);
-
-    if (Object.keys(mapA).length !== Object.keys(mapB).length) {
-        return false;
-    }
-
-    for (let key in mapA) {
-        if (mapA[key] !== mapB[key]) {
-            return false
-        }
-    }
-    return true;
+    return cleanString(stringA) === cleanString(stringB);
 }
 
-function buildCharMap(str) {
-    const charMap = {};
-    for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
-        charMap[char] = charMap[char] + 1 || 1;
-    }
-    return charMap;
+function cleanString(str) {
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
 }

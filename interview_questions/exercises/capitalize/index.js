@@ -22,13 +22,32 @@ function capitalize(str) {
 // their first
 /*
 function capitalize(str) {
-
+    const cap = [];
+    const sentence = str.split(' ');
+    for (word of sentence) {
+        let first = word[0].toUpperCase();
+        let rest = word.slice(1); // get the rest of the string
+        cap.push(`${first}${rest}`)
+    }
+    return cap.join(' ');
 }
 */
 
 // thier second
 /*
 function capitalize(str) {
-
+    let capResult = '';
+    for (let i = 0; i < str.length; i++) {
+        if (i === 0) {
+            capResult += str[i].toUpperCase();
+        }
+        else if (str[i - 1] === ' ') {
+            capResult += str[i].toUpperCase();
+        }
+        else {
+            capResult += str[i];
+        }
+    }
+    return capResult;
 }
 */

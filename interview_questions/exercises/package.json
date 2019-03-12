@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/TylerSustare/practice#readme",
   "dependencies": {
-    "jest": "^23.2.0"
+    "jest": "^24.4.0"
   }
 }

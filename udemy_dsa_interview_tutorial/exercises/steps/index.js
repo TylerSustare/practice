@@ -56,9 +56,18 @@ function steps(n) {
 }
 */
 
-// their second
-function steps(n) {
+// their second. It's recursive, but not neccesarily better
+function steps(n, row = 0, stair = '') {
     if (row === n) {
         return;
     }
+    // end of the row
+    if (n === stair.length) {
+        console.log(stair);
+        return steps(n, row + 1);
+    }
+
+    const charToAdd = stair.length <= row ? '#' : ' ';
+    // use string with new length in the next call
+    return steps(n, row, stair + charToAdd);
 }

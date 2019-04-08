@@ -4,7 +4,8 @@
   "description": "Each folder will have a file describing the question and one or more solutions.",
   "main": "index.js",
   "scripts": {
-    "test": "../node_modules/jest/bin/jest.js test.js"
+    "test": "./node_modules/jest/bin/jest.js",
+    "help": "echo 'npm test --t <folder-name>'"
   },
   "repository": {
     "type": "git",
